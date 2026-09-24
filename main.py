@@ -36,7 +36,7 @@ async def search_handler(message: types.Message):
         text = f"🎬 **{title}**\n\n🔗 [Открыть на Shikimori]({url})"
         await message.answer(text, parse_mode="Markdown", disable_web_page_preview=False)
     else:
-        await message.answer("😔 К сожалению, ничего не найдено. Попробуй уточнить запрос.")
+        await message.answer("К сожалению, ничего не найдено. Попробуйте уточнить запрос.")
 
 
 async def main():
